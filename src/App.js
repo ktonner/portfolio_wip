@@ -7,23 +7,24 @@ import Home from './pages/Home/Home'
 import Work from './pages/Work/Work'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
+class App extends Component {
+  render () {return (
     <div className="App">
       <Navigation/>
     <BrowserRouter>
 
       <div className="main-content">
       <Switch>
-      <Route exact path="/Portfolio2" component={Home} />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/Portfolio2/work" component={Work} />
+      <Route path="/Portfolio2" component={Home} />
+      <Route path="/" component={Home} />
+      <Route path="/Portfolio2/work" component={Work} />
       </Switch>
       </div>
      
       </BrowserRouter>
     </div>
   );
+  }
 }
 
 export default App;
