@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav'
 import { NavLink } from 'react-router-dom'
 import './App.css';
 import Navigation from './Components/Navbar'
-
 import Home from './pages/Home/Home'
 import Work from './pages/Work/Work'
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
@@ -15,13 +14,13 @@ class App extends Component {
       
     <BrowserRouter>
     <nav>
-     <Link to='/'>Home</Link>
-    <Link to='/work'>Projects</Link>
+     <Link to='/portfolio'>Home</Link>
+    <Link to='/portfolio/work'>Projects</Link>
   
     </nav>
       <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/work" component={Work} />
+      <Route path="/portfolio" exact component={Home} />
+      <Route path="/portfolio/work" component={Work} />
       </Switch>
       
      
