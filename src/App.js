@@ -14,14 +14,14 @@ class App extends Component {
       
     <BrowserRouter>
     <nav>
-     <Link to='/portfolio'>Home</Link>
-    <Link to='/portfolio/work'>Projects</Link>
+     <Link to='/portfolio_wip'>Home</Link>
+    <Link to='/portfolio_wip/work'>Projects</Link>
   
     </nav>
       <Switch>
       <Route path="/portfolio" exact component={Home} />
       <Route path="/portfolio_wip" exact component={Home} />
-      <Route path="/portfolio/work" component={Work} />
+      <Route path="/portfolio_wip/work" component={Work} />
       </Switch>
       
      
