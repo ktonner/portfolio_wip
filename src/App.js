@@ -20,6 +20,7 @@ class App extends Component {
     </nav>
       <Switch>
       <Route path="/portfolio" exact component={Home} />
+      <Route path="/portfolio_wip" exact component={Home} />
       <Route path="/portfolio/work" component={Work} />
       </Switch>
       
